@@ -2,12 +2,108 @@
   background-color: #F2F2F2;
 }
 
-.idphoto-and-about {
-  display: flex;
-  align-item: center;
+#idphoto {
+  opacity: 0.6;
+  width: 40%;
 }
 
+.idphoto-and-about {
+  display: flex;
+  align-items: center;}
+
 .about {
-  width: 25vw;
+  //width: 25vw;
   text-align: justify;
+  h3 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .highlight-purple {
+    color: rgb(133, 77, 255);
+    background: rgba(133, 77, 255,.1);
+    text-decoration : none;
+    cursor: pointer;
+  }
+   .highlight-purple:hover {
+    color: white;
+    background: rgba(133, 77, 255,.3);
+  }
+
+  .highlight-green {
+    color: rgb(14, 174, 57);
+    background: rgba(14, 174, 57,.1);
+    text-decoration : none;
+    cursor: pointer;
+  }
+  .highlight-green:hover {
+    color: white;
+    background: rgba(14, 174, 57,.3);
+  }
+
+  .highlight-red {
+    color: rgb(255, 20, 20);
+    background: rgba(255, 20, 20,.1);
+    text-decoration : none;
+    cursor: pointer;
+  }
+  .highlight-red:hover {
+    color: white;
+    background: rgba(255, 20, 20,.3);
+  }
+
+  .highlight-orange {
+    color: rgb(236, 173, 15);
+    background: rgba(236, 173, 15,.1);
+    text-decoration : none;
+    cursor: pointer;
+  }
+  .highlight-orange:hover {
+    color: white;
+    background: rgba(236, 173, 15,.3);
+  }
+
+  .highlight-light-blue {
+    color: rgb(17, 214, 240);
+    background: rgba(17, 214, 240,.1);
+    text-decoration : none;
+    cursor: pointer;
+  }
+  .highlight-light-blue:hover {
+    color: white;
+    background: rgba(17, 214, 240,.3);
+  }
+
+  .highlight-grey {
+    color: rgb(141, 141, 141);
+    background: rgba(141, 141, 141,.1);
+    text-decoration : none;
+    cursor: pointer;
+  }
+  .highlight-grey:hover {
+    color: white;
+    background: rgba(141, 141, 141,.3);
+  }
+}
+
+a.link {
+  -webkit-box-shadow: inset 0 -8px 0 rgba(250, 219, 51,0.55);
+  box-shadow: inset 0 -8px 0 rgba(250, 219, 51,0.55);
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+  color: rgb(94, 87, 87);
+  font-weight: 700;
+}
+
+a, a:focus {
+    outline: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+a.link:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: rgba(250, 219, 51,0.55);
 }

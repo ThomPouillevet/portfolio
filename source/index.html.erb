@@ -38,17 +38,22 @@ title: Thomas Pouillevet | Full Stack Web Developer
       </div>
     </div>
   </div>
-  <div class="wrapper col-md-10 col-md-offset-1">
+  <div class="wrappercol-md-10 col-md-offset-1">
     <div class="home-content">
-      <div class="idphoto-and-about">
-        <%= image_tag "idphoto.png", id: "idphoto" %>
-        <div class="about">
+
+      <div class="idphoto-and-about row">
+        <%= image_tag "idphoto.png", id: "idphoto", :class => "col-xs-12 col-sm-6 col-md-6 col-lg-6" %>
+        <div class="about col-xs-12 col-sm-4 col-md-4col-lg-6">
           <h3>Hello, I’m <span>Thomas</span></h3>
           <p>a French guy currently living in Paris, France.<br>
-          With my dev skills and business skills acquired at LeWagon and EMLyon, I develop full-stack products while being user-driven like for Treep or Awesome Suits.<br>
+          With my <a href="#" class="link">dev skills</a> and <a href="#" class="link">business skills</a> acquired at <a href="#" class="link">LeWagon</a> and <a href="#" class="link">EMLyon</a>, I develop full-stack products while being user-driven like for <a href="#" class="link">Treep</a> or <a href="#" class="link">Awesome Suits</a>.<br><br>
           I usually spend my free time with friends or try new apps, listen to many podcasts, read, learn thanks to awesome YouTube channels, travel and do via-ferratas.</p>
+          <div class="col-md-8 col-md-offset-2">
+            <a href="#" class="btn animated-button thar-three">Contact me now</a>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
