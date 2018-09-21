@@ -5,16 +5,16 @@ title: Thomas Pouillevet | Full Stack Web Developer
   <div class="navbar-wagon">
     <!-- Logo -->
 
-      <img src="#" alt="logo" style="visibility: hidden; height: 50px;">
+    <img src="#" alt="logo" style="visibility: hidden; height: 50px;">
 
     <!-- Right Navigation -->
     <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-      <a href="" class="navbar-wagon-item navbar-wagon-link">About</a>
-      <a href="" class="navbar-wagon-item navbar-wagon-link">Experience</a>
-      <a href="" class="navbar-wagon-item navbar-wagon-link">Skills</a>
-      <a href="" class="navbar-wagon-item navbar-wagon-link">Education</a>
-      <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+      <a href="#about" class="navbar-wagon-item navbar-wagon-link">About</a>
+      <a href="#experience" class="navbar-wagon-item navbar-wagon-link">Experience</a>
+      <a href="#skills" class="navbar-wagon-item navbar-wagon-link">Skills</a>
+      <a href="#education" class="navbar-wagon-item navbar-wagon-link">Education</a>
+      <a href="#contact" class="navbar-wagon-item navbar-wagon-link">Contact</a>
 
       <!-- Profile picture with dropdown list -->
       <div class="navbar-wagon-item">
@@ -29,43 +29,111 @@ title: Thomas Pouillevet | Full Stack Web Developer
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="wrappercol-md-10 col-md-offset-1">
+  <div class="wrapper col-md-10 col-md-offset-1">
     <div class="home-content">
 
       <div class="idphoto-and-about row">
-        <%= image_tag "idphoto.png", id: "idphoto", :class => "col-xs-12 col-sm-6 col-md-6 col-lg-6" %>
-        <div class="about col-xs-12 col-sm-4 col-md-4col-lg-6">
+        <%= image_tag "idphoto.png", id: "idphoto", :class => "col-xs-12 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1" %>
+        <div class="about col-xs-12 col-sm-4 col-md-4col-lg-6" id="about">
           <h3>Hello, I’m <span>Thomas</span></h3>
-          <p>a French guy currently living in Paris, France.<br>
-          With my <a href="#" class="link">dev skills</a> and <a href="#" class="link">business skills</a> acquired at <a href="#" class="link">LeWagon</a> and <a href="#" class="link">EMLyon</a>, I develop full-stack products while being user-driven like for <a href="#" class="link">Treep</a> or <a href="#" class="link">Awesome Suits</a>.<br><br>
-          I usually spend my free time with friends or try new apps, listen to many podcasts, read, learn thanks to awesome YouTube channels, travel and do via-ferratas.</p>
+          <p>a French guy currently living in Paris, France.<br><br>
+            With my <a href="#" class="link">dev skills</a> and <a href="#" class="link">business skills</a> acquired at <a href="#" class="link">LeWagon</a> and <a href="#" class="link">EMLyon</a>, I develop full-stack products while being user-driven like for <a href="#" class="link">Treep</a> or <a href="#" class="link">Awesome Suits</a>.<br><br>
+          I usually spend my free time with friends 🍻 or try new apps 🔍, listen to many podcasts 🎧, learn thanks to awesome YouTube channels 📺, travel 🌍 and do via-ferratas 🏔.</p>
           <div class="col-md-8 col-md-offset-2">
-            <a href="#" class="btn animated-button thar-three">Contact me now</a>
+            <a href="#" class="btn animated-button thar-three">Contact me now 🚀</a>
           </div>
         </div>
       </div>
 
-      <div class="experience">
-
+      <div class="section experience" id="experience">
+        <h3>Experience</h3>
+        <div class="treep">
+          <div class="experience-title">
+            <h3>Treep</h3>
+          </div>
+          <div class="experience-screenshot">
+            <div class="carousel-container">
+              <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <li data-target="#carousel" data-slide-to="2"></li>
+                  <li data-target="#carousel" data-slide-to="3"></li>
+                  <li data-target="#carousel" data-slide-to="4"></li>
+                  <li data-target="#carousel" data-slide-to="5"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="active item"><img src="/images/treep-Desktop.png" alt=""></div>
+                  <div class="item"><img src="/images/treep-value-prop.png" alt=""></div>
+                  <div class="item"><img src="/images/treep-dashboard.png" alt=""></div>
+                  <div class="item"><img src="/images/treep-show-event.png" alt=""></div>
+                  <div class="item"><img src="/images/treep-checkout.png" alt=""></div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+              </div>
+            </div>
+          </div>
+          <div class="experience-description">
+            <p>Treep is a tool for travel agencies meant to help them creating trips quickly and easily, visualize the different itineraries and enhance communication with travelers. The goal was to address the needs of travel agencies that want to share their experience while offering non-standard travels at low cost for a clientele usually building trips on its own.
+              <br><br>
+            I developed Treep in 10 days at Le Wagon with my 3 buddies Yoann, Alex and Eugene.</p>
+          </div>
+        </div>
+        <div class="awesome-suits">
+          <div class="experience-title">
+            <h3>Awesome Suits</h3>
+          </div>
+          <div class="experience-screenshot">
+            <div class="carousel-container">
+              <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="active item"><img src="/images/awesome-Desktop.png" alt=""></div>
+                  <div class="item"><img src="/images/awesome-dashboard.png" alt=""></div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="experience-description">
+          <p>Treep is a tool for travel agencies meant to help them creating trips quickly and easily, visualize the different itineraries and enhance communication with travelers. The goal was to address the needs of travel agencies that want to share their experience while offering non-standard travels at low cost for a clientele usually building trips on its own.
+            <br><br>
+          I developed Treep in 10 days at Le Wagon with my 3 buddies Yoann, Alex and Eugene.</p>
+        </div>
       </div>
-      <div class="skills">
 
-      </div>
-      <div class="education">
+    </div>
+    <div class="section skills" id="skills">
+      <h3>Skills</h3>
 
-      </div>
-      <div class="contact">
+    </div>
+    <div class="section education" id="education">
+      <h3>Education</h3>
 
-      </div>
+    </div>
+    <div class="section contact" id="contact">
+      <h3>Contact</h3>
+
     </div>
   </div>
+</div>
 </div>

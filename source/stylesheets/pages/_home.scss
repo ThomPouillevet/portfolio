@@ -87,12 +87,18 @@
   }
 }
 
+.experience-description {
+  p {
+    text-align: justify;
+  }
+}
+
 a.link {
   -webkit-box-shadow: inset 0 -8px 0 rgba(250, 219, 51,0.55);
   box-shadow: inset 0 -8px 0 rgba(250, 219, 51,0.55);
   -webkit-transition: background .2s ease;
   transition: background .2s ease;
-  color: rgb(94, 87, 87);
+  color: rgb(65, 65, 65);
   font-weight: 700;
 }
 
@@ -107,3 +113,66 @@ a.link:hover {
     color: rgb(0, 0, 0);
     background: rgba(250, 219, 51,0.55);
 }
+
+.section {
+  text-align: center;
+}
+
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+.carousel-container {
+  width: 60%;
+}
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+
+}
+
+.item:nth-child(1) {
+    background: transparent;
+}
+
+.item:nth-child(2) {
+    background: transparent;
+}
+
+.item:nth-child(3) {
+    background: transparent;
+}
+
