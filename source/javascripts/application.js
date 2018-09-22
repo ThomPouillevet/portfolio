@@ -3,4 +3,3 @@
 //= require_tree .
 
 $('.carousel').carousel();
-$('.carousel2').carousel();
