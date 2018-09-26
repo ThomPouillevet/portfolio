@@ -136,6 +136,21 @@ a.link:hover {
     background: rgba(250, 219, 51,0.55);
 }
 
+
+a.white-link {
+  -webkit-box-shadow: inset 0 -8px 0 rgba(250, 219, 51,0.9);
+  box-shadow: inset 0 -5px 0 rgba(250, 219, 51,0.9);
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+
+}
+
+a.white-link:hover {
+    text-decoration: none;
+    color: rgba (0, 0, 0, 0.9) !important;
+    background: rgba(250, 219, 51,0.9);
+}
+
 .section {
   text-align: center;
 }

@@ -1,10 +1,9 @@
 
 .card {
   height: 401px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
-  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -19,14 +18,14 @@ text-align: center;
 }
 
 .card-description {
-  padding-left: 10px;
+  padding-left: 40px;
   padding-bottom: 10px;
   text-align: left;
   h2 {
     font-size: 24px;
   }
   p {
-    font-size: 16px;
+    font-size: 14px;
 
   }
 }
