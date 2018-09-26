@@ -38,30 +38,38 @@ title: Thomas Pouillevet | Full Stack Web Developer
       </div>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="home-content">
+  <div class="container">
 
-      <div class="idphoto-and-about row">
-        <%= image_tag "idphoto.png", id: "idphoto", :class => "col-xs-12 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1" %>
-        <div class="about col-xs-12 col-sm-4 col-md-4col-lg-6" id="about">
-          <h3>Hello, I’m <span>Thomas</span></h3>
-          <p>a French guy currently living in Paris, France.<br><br>
-            With my <a href="#" class="link">dev skills</a> and <a href="#" class="link">business skills</a> acquired at <a href="#" class="link">LeWagon</a> and <a href="#" class="link">EMLyon</a>, I develop full-stack products while being user-driven like for <a href="#" class="link">Treep</a> or <a href="#" class="link">Awesome Suits</a>.<br><br>
-          I usually spend my free time with friends 🍻 or try new apps 🔍, listen to many podcasts 🎧, learn thanks to awesome YouTube channels 📺, travel 🌍 and do via-ferratas 🏔.</p>
-          <div class="col-md-8 col-md-offset-2">
-            <a href="#" class="btn animated-button thar-three">Contact me now 🚀</a>
-          </div>
+    <div class="img-plus-about">
+
+      <div class="img-thom">
+        <%= image_tag "idphoto.png", id: "idphoto" %>
+      </div>
+
+      <div class="about">
+        <h3>Hello, I’m <span>Thomas</span></h3>
+        <p>a French guy currently living in Paris, France.<br><br>
+          With my <a href="#" class="link">dev skills</a> and <a href="#" class="link">business skills</a> acquired at <a href="#" class="link">LeWagon</a> and <a href="#" class="link">EMLyon</a>, I develop full-stack products while being user-driven like for <a href="#" class="link">Treep</a> or <a href="#" class="link">Awesome Suits</a>.<br><br>
+        I usually spend my free time with friends 🍻 or try new apps 🔍, listen to many podcasts 🎧, learn thanks to awesome YouTube channels 📺, travel 🌍 and do via-ferratas 🏔.</p>
+        <div class="col-md-8 col-md-offset-2">
+          <a href="#" class="btn animated-button thar-three contact-btn">Contact me now 🚀  </a>
         </div>
       </div>
 
-      <div class="section experience" id="experience">
-        <h3>Experience</h3>
-        <div class="treep">
-          <div class="experience-title">
-            <h3>Treep</h3>
-          </div>
-          <div class="experience-screenshot row">
-            <div class="carousel-container col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-7 col-lg-7">
+    </div>
+
+    <div class="section experience" id="experience">
+      <h2><i class="far fa-thumbs-up"></i> Experience</h2>
+
+      <div class="treep">
+        <div class="experience-title">
+          <h3>Treep</h3>
+        </div>
+
+        <div class="row experience-box">
+
+          <div class="col-md-6">
+            <div class="carousel-container">
               <div id="carousel-1" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -84,23 +92,37 @@ title: Thomas Pouillevet | Full Stack Web Developer
                 <a class="carousel-control right" href="#carousel-1" data-slide="next">&rsaquo;</a>
               </div>
             </div>
-            <div class="experience-description col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-5 col-lg-5">
-              <p>Treep is a tool for travel agencies meant to help them creating trips quickly and easily, visualize the different itineraries and enhance communication with travelers. The goal was to address the needs of travel agencies that want to share their experience while offering non-standard travels at low cost for a clientele usually building trips on its own.
-                <br><br>
-              I developed Treep in 10 days at Le Wagon with my 3 buddies Yoann, Alex and Eugene.</p>
+            <div class="col-md-8 col-md-offset-2">
+              <a href="https://youtu.be/_BwJYWpmMr4?t=55m11s" class="btn animated-button thar-three video-pitch-btn">Our pitch in video 🚀  </a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="experience-description">
+              <p>Treep is a tool for travel agencies meant to help them creating trips quickly and easily, visualize the different itineraries and enhance communication with travelers.<br><br>
+                Developed in 10 days it is the final project of my training at Le Wagon. I led this project with 3 junior developers<br><br>
+
+                ✔ UX and UI models made on Figma and Sketch<br>
+                ✔ Back-end in Ruby on Rails with architecture respecting the MVP convention.<br>
+                ✔ Using geocoder, simple_form, currency, cloudinary, faker, pundit, icalendar, carrierwave gems<br>
+                ✔ Using the cytoscape.js library to develop our core feature<br>
+                ✔ Front-end in HTML, sCSS and JS<br>
+                ✔ Project pitched midway and at the end of course in front of a hundred people<br><br>
+
+              Special focus on UX and UI as one of the major challenge of the project was to make the use of our core feature intuitive, without overloading the website.</p>
             </div>
           </div>
         </div>
-        <div class="awesome-suits">
-          <div class="experience-title">
-            <h3>Awesome Suits</h3>
-          </div>
-          <div class="experience-screenshot row">
-            <div class="experience-description">
-              <p>Treep is a tool for travel agencies meant to help them creating trips quickly and easily, visualize the different itineraries and enhance communication with travelers. The goal was to address the needs of travel agencies that want to share their experience while offering non-standard travels at low cost for a clientele usually building trips on its own.
-                <br><br>
-              I developed Treep in 10 days at Le Wagon with my 3 buddies Yoann, Alex and Eugene.</p>
-            </div>
+      </div>
+
+      <div class="awesome-suits">
+        <div class="experience-title">
+          <h3>Awesome Suits</h3>
+        </div>
+
+        <div class="row experience-box">
+
+          <div class="col-md-6">
             <div class="carousel-container">
               <div id="carousel-2" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -118,19 +140,73 @@ title: Thomas Pouillevet | Full Stack Web Developer
               </div>
             </div>
           </div>
+
+          <div class="col-md-6">
+            <div class="experience-description">
+              <p>Awesome Suits allows users to create a profile to either offer costumes for rent, or rent costumes for events (wedding, ceremony ...). The geolocation function makes it easy to target the closest costumes..<br><br>
+                Developed in 5 days during Le Wagon bootcamp, I led this project with 3 junior developers<br><br>
+
+                ✔ UX and UI models made on Figma and Sketch<br>
+                ✔ Back-end in Ruby on Rails with architecture respecting the MVP convention.<br>
+                ✔ Using geocoder, simple_form, currency, cloudinary, faker, pundit, icalendar, carrierwave gems<br>
+                ✔ Front-end in HTML, sCSS and JS<br>
+              ✔ Project pitched midway and after 5 days to have feedbacks.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="section skills" id="skills">
-      <h3>Skills</h3>
+      <h2><i class="fas fa-gamepad"></i> Skills</h2>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1520583457224-aee11bad5112?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d22936a15c78895fbf7994cea959c7ea&auto=format&fit=crop&w=401&q=80');">
+            <div class="card-category">TECH SKILLS</div>
+            <div class="card-description">
+              <h2>Back end</h2>
+              <p><img src="images/ruby.png" class="skills-img"> Ruby, <img src="images/rails.png" class="skills-img"> Ruby On Rails, APIs, <img src="images/sql.png" class="skills-img"> PostgreSQL, <img src="images/middleman.svg" class="skills-img"> Middleman</p>
+              <h2>Front end</h2>
+              <p><img src="images/js.png" class="skills-img"> JavaScript, <img src="images/html.png" class="skills-img"> Html, <img src="images/css.png" class="skills-img"> CSS, <img src="images/bootstrap.png" class="skills-img"> Bootstrap</p>
+              <h2>Product Design</h2>
+              <p><img src="images/sketch.png" class="skills-img"> Sketch, <img src="images/photoshop.png" class="skills-img"> Adobe Photoshop, <img src="images/figma.png" class="skills-img"> Figma</p>
+              <h2>Project Management</h2>
+              <p><i class="fab fa-github"></i> Github, <img src="images/trello.png" class="skills-img"> Trello, <img src="images/slack.png" class="skills-img"> Slack, and <img src="images/xmind.png" class="skills-img"> XMind (MindMaps)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1525856326341-8adeed4c8b8b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=664eca9d03a5be8e34786a5222862411&auto=format&fit=crop&w=765&q=80');">
+            <div class="card-category">BUSINESS SKILLS</div>
+            <div class="card-description">
+              <h2>Back end</h2>
+              <p>Ttotototot</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
     <div class="section education" id="education">
-      <h3>Education</h3>
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          .col-md-6
+        </div>
+
+        <div class="col-md-6">
+          .col-md-6
+        </div>
+      </div>
 
     </div>
     <div class="section contact" id="contact">
-      <h3>Contact</h3>
+      <h2><i class="far fa-envelope"></i> Contact</h2>
 
     </div>
   </div>

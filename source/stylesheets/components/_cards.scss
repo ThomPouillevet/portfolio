@@ -1,0 +1,50 @@
+
+.card {
+  height: 401px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.card-category {
+text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.card-description {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+
+  }
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
+}
+
+.skills-img {
+  width: 18px;
+}
