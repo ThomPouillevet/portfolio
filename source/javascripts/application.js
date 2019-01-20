@@ -2,4 +2,16 @@
 //= require bootstrap
 //= require_tree .
 
-$('.carousel').carousel();
+$(".carousel").carousel();
+
+$(function() {
+  $(".pop").on("click", function() {
+    $(".imagepreview").attr(
+      "src",
+      $(this)
+        .find("img")
+        .attr("src")
+    );
+    $("#imagemodal").modal("show");
+  });
+});

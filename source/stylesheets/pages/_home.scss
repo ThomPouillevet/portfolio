@@ -1,5 +1,5 @@
 #home {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .img-plus-about {
@@ -10,90 +10,88 @@
 }
 
 #idphoto {
-  opacity: 0.6;
+  opacity: 0.9;
   max-height: 80vh;
-
 }
 
 .main-titles {
   margin-top: 120px;
 }
 
-
-
 .about {
   width: 450px;
   text-align: justify;
   h3 {
-    font-size: 40px;
+    font-size: 25px;
+    font-weight: 800;
   }
   p {
     font-size: 16px;
   }
   .highlight-purple {
     color: rgb(133, 77, 255);
-    background: rgba(133, 77, 255,.1);
-    text-decoration : none;
+    background: rgba(133, 77, 255, 0.1);
+    text-decoration: none;
     cursor: pointer;
   }
-   .highlight-purple:hover {
+  .highlight-purple:hover {
     color: white;
-    background: rgba(133, 77, 255,.3);
+    background: rgba(133, 77, 255, 0.3);
   }
 
   .highlight-green {
     color: rgb(14, 174, 57);
-    background: rgba(14, 174, 57,.1);
-    text-decoration : none;
+    background: rgba(14, 174, 57, 0.1);
+    text-decoration: none;
     cursor: pointer;
   }
   .highlight-green:hover {
     color: white;
-    background: rgba(14, 174, 57,.3);
+    background: rgba(14, 174, 57, 0.3);
   }
 
   .highlight-red {
     color: rgb(255, 20, 20);
-    background: rgba(255, 20, 20,.1);
-    text-decoration : none;
+    background: rgba(255, 20, 20, 0.1);
+    text-decoration: none;
     cursor: pointer;
   }
   .highlight-red:hover {
     color: white;
-    background: rgba(255, 20, 20,.3);
+    background: rgba(255, 20, 20, 0.3);
   }
 
   .highlight-orange {
     color: rgb(236, 173, 15);
-    background: rgba(236, 173, 15,.1);
-    text-decoration : none;
+    background: rgba(236, 173, 15, 0.1);
+    text-decoration: none;
     cursor: pointer;
   }
   .highlight-orange:hover {
     color: white;
-    background: rgba(236, 173, 15,.3);
+    background: rgba(236, 173, 15, 0.3);
   }
 
   .highlight-light-blue {
     color: rgb(17, 214, 240);
-    background: rgba(17, 214, 240,.1);
-    text-decoration : none;
+    background: rgba(17, 214, 240, 0.1);
+    text-decoration: none;
     cursor: pointer;
   }
   .highlight-light-blue:hover {
     color: white;
-    background: rgba(17, 214, 240,.3);
+    background: rgba(17, 214, 240, 0.3);
   }
 
   .highlight-grey {
     color: rgb(141, 141, 141);
-    background: rgba(141, 141, 141,.1);
-    text-decoration : none;
+    background: rgba(141, 141, 141, 0.1);
+    text-decoration: none;
     cursor: pointer;
   }
   .highlight-grey:hover {
     color: white;
-    background: rgba(141, 141, 141,.3);
+    background: rgba(141, 141, 141, 0.3);
   }
 }
 
@@ -101,95 +99,93 @@
   margin-top: 30px;
 }
 
-.experience-title {
+.personal-project-title {
   h3 {
     margin-bottom: 25px;
     margin-top: 50px;
   }
 }
 
-.experience-description {
+.personal-project-description {
   p {
     text-align: justify;
   }
 }
 
-.experience-box {
+.personal-project-box {
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
 a.link {
-  -webkit-box-shadow: inset 0 -8px 0 rgba(250, 219, 51,0.55);
-  box-shadow: inset 0 -8px 0 rgba(250, 219, 51,0.55);
-  -webkit-transition: background .2s ease;
-  transition: background .2s ease;
+  -webkit-box-shadow: inset 0 -8px 0 rgba(250, 219, 51, 0.55);
+  box-shadow: inset 0 -8px 0 rgba(250, 219, 51, 0.55);
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
   color: rgb(65, 65, 65);
   font-weight: 700;
 }
 
-a, a:focus {
-    outline: 0;
-    text-decoration: none;
-    color: inherit;
+a,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 a.link:hover {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    background: rgba(250, 219, 51,0.55);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background: rgba(250, 219, 51, 0.55);
 }
 
-
 a.white-link {
-  -webkit-box-shadow: inset 0 -8px 0 rgba(250, 219, 51,0.9);
-  box-shadow: inset 0 -5px 0 rgba(250, 219, 51,0.9);
-  -webkit-transition: background .2s ease;
-  transition: background .2s ease;
-
+  -webkit-box-shadow: inset 0 -8px 0 rgba(250, 219, 51, 0.9);
+  box-shadow: inset 0 -5px 0 rgba(250, 219, 51, 0.9);
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 a.white-link:hover {
-    text-decoration: none;
-    color: rgba (0, 0, 0, 0.9) !important;
-    background: rgba(250, 219, 51,0.9);
+  text-decoration: none;
+  color: rgba (0, 0, 0, 0.9) !important;
+  background: rgba(250, 219, 51, 0.9);
 }
 
 .section {
   text-align: center;
 }
 
-
 .carousel-fade {
-    .carousel-inner {
-        .item {
-            transition-property: opacity;
-        }
-
-        .item,
-        .active.left,
-        .active.right {
-            opacity: 0;
-        }
-
-        .active,
-        .next.left,
-        .prev.right {
-            opacity: 1;
-        }
-
-        .next,
-        .prev,
-        .active.left,
-        .active.right {
-            left: 0;
-            transform: translate3d(0, 0, 0);
-        }
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
     }
 
-    .carousel-control {
-        z-index: 2;
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
     }
+
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
 }
 
 html,
@@ -197,23 +193,22 @@ body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
-    height: 100%;
-
+  height: 100%;
 }
 
 .item:nth-child(1) {
-    background: transparent;
+  background: transparent;
 }
 
 .item:nth-child(2) {
-    background: transparent;
+  background: transparent;
 }
 
 .item:nth-child(3) {
-    background: transparent;
+  background: transparent;
 }
 
-.experience {
+.personal-project {
   p {
     font-size: 16px;
   }

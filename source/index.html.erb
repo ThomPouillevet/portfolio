@@ -11,7 +11,7 @@ title: Thomas Pouillevet | Full Stack Web Developer
     <div class="navbar-wagon-right hidden-xs hidden-sm">
 
       <a href="#about" class="navbar-wagon-item navbar-wagon-link">About</a>
-      <a href="#experience" class="navbar-wagon-item navbar-wagon-link">Experience</a>
+      <a href="#personal-project" class="navbar-wagon-item navbar-wagon-link">personal-project</a>
       <a href="#skills" class="navbar-wagon-item navbar-wagon-link">Skills</a>
       <a href="https://github.com/thompouillevet" class="navbar-wagon-item navbar-wagon-link" target="_blank"><i class="fab fa-github" style="font-size: 20px;"></i></a>
       <a href="https://www.linkedin.com/in/thomaspouillevet/" class="navbar-wagon-item navbar-wagon-link" target="_blank""><i class="fab fa-linkedin" style="font-size: 20px;"></i></a>
@@ -30,7 +30,7 @@ title: Thomas Pouillevet | Full Stack Web Developer
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#personal-project">personal-project</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="https://github.com/thompouillevet" target="_blank"><i class="fab fa-github"></i></a></li>
           <li><a href="https://www.linkedin.com/feed/" target="_blank""><i class="fab fa-linkedin"></i></a></li>
@@ -49,7 +49,14 @@ title: Thomas Pouillevet | Full Stack Web Developer
       <div class="about">
         <h3>Hello, I’m <span>Thomas</span></h3>
         <p>a French guy currently living in Paris, France.<br><br>
-          Thanks to my Master in IP Law, my Master in Innovation Management (EMLyon Business School) and Le Wagon Coding Bootcamp, I acquired <a href="#tech-skills" class="link">tech skills</a> and <a href="#business-skills" class="link">business & legal skills</a>. I'm now a Fullstack Rails Web Developer and develop products while being constantly user-driven, from the idea to the market. <br><br> Check some of my productions here, like <a href="#treep" class="link">Treep</a> or <a href="#awesome-suits" class="link">Awesome Suits</a>.<br><br>
+
+        I'm now a Fullstack Rails Web Developer and I develop products while being constantly user-driven, from the idea to the market. <br><br>
+
+        Thanks to my Master in IP Law, my Master in Innovation Management (EMLyon Business School) and Le Wagon Coding Bootcamp, I acquired <a href="#tech-skills" class="link">tech skills</a> and <a href="#business-skills" class="link">business & legal skills</a>. <br><br>
+
+        I then worked for Le Closet, and learned a lot in a face-paced environment. <br><br>
+
+        I also developed some personal projects, like <a href="#treep" class="link">Treep</a> or <a href="#awesome-suits" class="link">Awesome Suits</a>.<br><br>
 
         Feel free to connect with me, I'm curious about many things and I usually spend my free time with friends 🍻 or try new apps 🔍, listen to many podcasts 🎧, learn thanks to awesome YouTube channels 📺, travel 🌍 and do via-ferratas 🏔.</p>
         <div class="col-md-8 col-md-offset-2">
@@ -59,15 +66,54 @@ title: Thomas Pouillevet | Full Stack Web Developer
 
     </div>
 
-    <div class="section experience" id="experience">
-      <h2 class = "main-titles"><i class="far fa-thumbs-up"></i> Experience</h2>
+    <div  class="section experience" id="experience">
+      <h2 class = "main-titles"><i class="fas fa-rocket"></i>Experience</h2>
+      <div  class="closet-img-container col-md-6">
+        <a href="#" class="pop">
+            <img src="http://patyshibuya.com.br/wp-content/uploads/2014/04/04.jpg" style="width: 400px; height: 264px;">
+        </a>
+
+        <a href="#" class="pop">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" style="width: 400px; height: 264px;">
+        </a>
+
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <img src="" class="imagepreview" style="width: 100%;" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="closet-text-container col-md-6">
+        <div class="experience-description">
+          <p>Treep is a tool for travel agencies meant to help them creating trips quickly and easily, visualize the different itineraries and enhance communication with travelers.<br><br>
+            Developed in 10 days it is the final project of my training at Le Wagon. I led this project with 3 junior developers<br><br>
+
+            ✔ UX and UI models made on Figma and Sketch<br>
+            ✔ Back-end in Ruby on Rails with architecture respecting the MVP convention.<br>
+            ✔ Using geocoder, simple_form, currency, cloudinary, faker, pundit, icalendar, carrierwave gems<br>
+            ✔ Using the cytoscape.js library to develop our core feature<br>
+            ✔ Front-end in HTML, sCSS and JS<br>
+            ✔ Project pitched midway and at the end of course in front of a hundred people<br><br>
+
+          Special focus on UX and UI as one of the major challenge of the project was to make the use of our core feature intuitive, without overloading the website.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section personal-project" id="personal-project">
+      <h2 class = "main-titles"><i class="far fa-thumbs-up"></i>Personal Projects</h2>
 
       <div class="treep" id="treep">
-        <div class="experience-title">
+        <div class="personal-project-title">
           <h3>Treep</h3>
         </div>
 
-        <div class="row experience-box">
+        <div class="row personal-project-box">
 
           <div class="col-md-6">
             <div class="carousel-container">
@@ -99,7 +145,7 @@ title: Thomas Pouillevet | Full Stack Web Developer
           </div>
 
           <div class="col-md-6">
-            <div class="experience-description">
+            <div class="personal-project-description">
               <p>Treep is a tool for travel agencies meant to help them creating trips quickly and easily, visualize the different itineraries and enhance communication with travelers.<br><br>
                 Developed in 10 days it is the final project of my training at Le Wagon. I led this project with 3 junior developers<br><br>
 
@@ -117,11 +163,11 @@ title: Thomas Pouillevet | Full Stack Web Developer
       </div>
 
       <div class="awesome-suits" id="awesome-suits">
-        <div class="experience-title">
+        <div class="personal-project-title">
           <h3>Awesome Suits</h3>
         </div>
 
-        <div class="row experience-box">
+        <div class="row personal-project-box">
 
           <div class="col-md-6">
             <div class="carousel-container">
@@ -143,7 +189,7 @@ title: Thomas Pouillevet | Full Stack Web Developer
           </div>
 
           <div class="col-md-6">
-            <div class="experience-description">
+            <div class="personal-project-description">
               <p>Awesome Suits allows users to create a profile to either offer costumes for rent, or rent costumes for events (wedding, ceremony ...). The geolocation function makes it easy to target the closest costumes..<br><br>
                 Developed in 5 days during Le Wagon bootcamp, I led this project with 3 junior developers<br><br>
 
