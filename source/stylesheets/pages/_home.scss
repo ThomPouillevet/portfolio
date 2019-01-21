@@ -1,3 +1,7 @@
+.container {
+  overflow: auto;
+}
+
 #home {
   background-color: #f2f2f2;
 }
@@ -99,6 +103,26 @@
   margin-top: 30px;
 }
 
+// .section-experience {
+//   // height: -webkit-fill-available;
+// }
+
+.closet-img-and-text-container {
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 990px) {
+  .closet-img-and-text-container {
+    margin-top: 25px;
+    height: 360px;
+  }
+}
+// .closet-img-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
 .personal-project-title {
   h3 {
     margin-bottom: 25px;
@@ -106,9 +130,11 @@
   }
 }
 
+.experience-description,
 .personal-project-description {
   p {
     text-align: justify;
+    font-size: 16px;
   }
 }
 
